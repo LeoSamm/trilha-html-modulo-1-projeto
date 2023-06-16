@@ -6,57 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+<body style="background-color:rgb(247, 252, 204)" style="font-family:Arial"> 
+    <h1 style="color:rgb(7, 33, 146)" id="inicio"> Projeto Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
     <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+   
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li><a href="#historia">História dos computadores</a><sup>1</sup></li>
+        <li><a href="#clients">O que são <i>Clients</i></a><sup>2</sup></li>
+        <li><a href="#servers">O que são <i>Servers</i></a><sup>3</sup></li>
+        <li><a href="#estruturas-basicas-HTML">Como é uma estrutura básica de um HTML</a><sup>4</sup></li>
+        <li><a href="#tags-atributos">O que são as <i>Tags</i> e <i>Atributos</i></a><sup>5</sup></li>
+        <li><a href="#textos">Textos ou tipografía HTML</a><sup>6</sup></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a><sup>7</sup></li>
+        <li><a href="#refenrecias">Links de referências</a><sup>8</sup></li>
+      </ul>
+    
+      <hr />
+
+    <h2 id="historia">História dos computadores</h2>
+    <p>Para dar inicio a história dos computadores é importante saber o que significa "computador", que seria algo que vem do verbo computar, então pensando assim podemos dizer que os computadores são maquinas de computar ou calcular dados. Sabendo disso podemos dizes que os computadores ja existem des das maquinas de calculos, como a <strong><u>Maquina de Babbage</u></strong> e a <strong><u>Maquina Turing</u></strong>. </p> 
+    <p>Marcando a primeira geração dos computadores, em 1944 foi criado pelos Estados Unidos o <strong><u>Harvard mark 1</u></strong> que foi considerado o primeiro computador, ele era baseado em valvulas o tornando eletro mecanico, e foi criado para realizar calculos bem mais complexos na época. Apos isso vieram o <strong><u>Colossus</u></strong> e o <strong><u>ENIAC</u></strong>, que ja eram um pouco mais automaticos. Os computadores dessa época eram gigantes ocupando salas inteiras, e foi nesta época surgiu o termo "<u>bug</u>", pois pelo fato desses computadores esquentarem muito, insetos eram atraidos e pousavam neles, e acabavam quebrando o equipamento.</p>
+    <p>A segunda geração dos computadores (1959 a 1965) foi marcada pelos <strong><u>Transistores</u></strong> que subistituiram as valvulas, fazendo com que os computares diminuisem de tamanho, podendo ser mechido entre salas, os tornando mais "portateis".</p>
+    <p>Ja na terceira geração (1965 a 1970) foram criados os <strong><u>Circuitos integrados</u></strong> que é composto por Transistores, Capacitores e Resistores, os famosos chips que fizeram os computadores diminuisem mais ainda e os tornando mais eficazes.</p>
+    <p>E por fim a quarta geração que se da de 1970 ate os dias atuais, nela teve a continuação a evoluçãos dos chips, a invenção do primeiro mouse desenvolvido pela <strong><u>apple</u></strong>, esta geração e muito marcada pelos <strong><u>Personal Computers/PCs</u></strong> que são os computadores mais pessoais, tornando os computadores mais populares e acessiveis. </p>
+    
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <h2 id="clients">O que são <i>Clients</i></h2>
+    <p>Falando da vida real, o cliente é a pessoa que tem acesso ou consome um certo produto ou serviço de uma empresa, falando-se de web, o <strong><u>Client</u></strong> é o dispositivo que consome alguma informação na internet, como por exemplo um tablet, um notebook, um smartphone ou um computador que se conectam por meio da internet a um site, que esta sendo hospedado em um servidor.</p>
+
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <h2 id="servers">O que são <i>Servers</i></h2>
+    <p>Quando falamos sobre servidores, podemos ter uma noção do que eles são apenas pelo seu nome, "servidor" nada mais é do que algo que serve informações para os <strong><u>Clients</u></strong>, esses servidores são nossos <strong><u>Servers</u></strong>, que são computadores voltados a isso.  </p>
+    <p>Existem varios tipos de servidores, cada um com uma função, como por exemplo:</p>
+    <ul>
+      <li>Servidores de Arquivos</li>
+      <li>Servidores de Seguranção(Firewall)</li>
+      <li>servidores de Streaming</li>
+      <li>Servidores de E-mail</li>
+      <li>Servidores Web</li>
+    </ul>
+    <blockquote>
+      Um local cheio de servidores, é conhecido como <strong><u>Data Center</u></strong>.
+    </blockquote>
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <h2 id="estruturas-basicas-HTML">Como é uma estrutura básica de um HTML</h2>
+    <p>O HTML consiste em basicamente em três partes que são: </p>
+      <ol>
+         <li>A tag "< html >", que serve para dizer que é um codigo HTML</li>
+         <li>A tag "< head >", tudo contido nesta tag, ira carregar antes de exibir pro usuario</li>
+         <li>A tag "< body >", tudo contido nesta tag, é o que o usuario visualizara</li>
+      </ol>
+      <blockquote>
+         Todas essas tags são abertas com <mark>"maior que, a tag, menor que"</mark> e apos abertas devem ser fechadas com <mark>"maior que, barra, a tag, menor que"</mark>.  
+      </blockquote>
+    
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <h2 id="tags-atributos">O que são as <i>Tags</i> e <i>Atributos</i></h2>
+    <p> Os elementos HTML ou também chamados de <strong><u>tags HTML</u></strong>, são utilizados para informar ao navegador que tipo de estrutura é essa que está sendo construída, podendo ser títulos, parágrafos, imagens, links, entre outros.</p>
+    <p> <strong><u>Atributos HTML</u></strong> são palavras especiais usadas dentro da tag de abertura para controlar o comportamento do elemento. Os atributos HTML são um modificador de um tipo de elemento HTML. Com eles podemos identificar melhor um elemento, informar qual arquivo aquela tag deve utilizar, indicar o tipo de um campo de texto, etc… </p>
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <h2 id="textos">Textos ou tipografía HTML</h2>
+    <p>Existem varios HTML feitos exclusivamente para formatação de texto, basicamente eles sâo tags feitas para formatação, como por exemplo:  "h1" até "h6", "p", "mark", "small", "i", "u", "strong", "sub", "sup", "blockquote" </p>
+
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <p>No HTML existem dois tipos de listas, as listas ordenadas que fazem topicos numerados e as listas nao ordenadas que fazem topicos não numerados, suas tags são respectivamente "ol" e "ul", que devem ser abertas e fachadas ao terminar da lista, para fazer um novo topico é necessario usar a tag "li".</p>
+    <small><a href="#inicio">(Voltar)</a></small>
+    
+    <hr />
+    
+    <h2 id="refenrencias">Links de referências</h2>
+    <ul>
+        <li><a href="https://www.w3schools.com/TAGS/default.asp" target="_blank">W3Schools HTML Reference</a><sub>(tags html)</sub></li>
+        <li><a href="https://web.dio.me/track/primeiros-passos-em-tecnologia" target="_blank">Cursos da DIO</a><sub>(curso html)</sub></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
-
-</body>
+   </body>
 </html>
